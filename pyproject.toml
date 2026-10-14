@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "small-atlas"
+version = "1.0.0"
+description = "Pembuat benih cerita dan jurnal dunia fiksi kecil berbahasa Indonesia."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { file = "LICENSE" }
+authors = [{ name = "Andrizre" }]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Environment :: Console",
+  "Topic :: Games/Entertainment :: Role-Playing",
+]
+
+[project.scripts]
+small-atlas = "smallatlas.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["smallatlas*"]
